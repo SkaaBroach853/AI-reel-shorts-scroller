@@ -106,3 +106,16 @@ So you can scroll Shorts with just simple gestures—no mouse or keyboard needed
 ## 📞 Contact
 
 Made with ❤️ by a beginner for beginners by AD. Feel free to contribute!
+
+---
+## DEMO IMAGES
+![b159eea1-957b-4d6e-8357-f5062e744745](https://github.com/user-attachments/assets/b431c9e0-a9ad-421e-ad21-070b4f817860)
+
+---
+![646eb77f-4481-4b1c-ad46-7654ea0fa201](https://github.com/user-attachments/assets/6694e340-e634-4833-9471-4f139bf42ad7)
+
+---
+![da3f59b5-8090-41f1-b060-5be0720a9831](https://github.com/user-attachments/assets/a5fd4fd4-cdd6-49cb-b1fd-4ebcfc3192d3)
+
+---
+![a2efd684-7272-452b-a4c9-71b939b39213](https://github.com/user-attachments/assets/9611fda1-58df-4973-a400-5a66cc42f963)
