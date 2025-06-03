@@ -7,8 +7,9 @@
 Control YouTube Shorts using just your face and fingers!  
 - **Thumb Down** → Next short  
 - **Index Finger Down** → Previous short  
-- **Mouth Open** → Next short
+- **Mouth Open** → Next short(Optional, Just for fun)
 
+---
 
 ## 🔧 Setup Instructions (Beginner Friendly)
 
@@ -18,11 +19,13 @@ Control YouTube Shorts using just your face and fingers!
 - Python 3.7+
 - A little patience 
 
+---
 
 ### 1. Clone or Download This Folder
 
 If you're reading this on GitHub or shared folder, just download it and unzip.
 
+---
 
 ### 2. Open Command Prompt (CMD)
 
@@ -32,6 +35,7 @@ Go to the folder using:
 cd path\to\ReelShortsController
 ```
 
+---
 
 ### 3. Create and Activate Virtual Environment (You may have done this)
 
@@ -47,6 +51,7 @@ venv\Scripts\activate
 
 You should see `(venv)` at the beginning of your command line.
 
+---
 
 ### 4. Install Required Libraries
 
@@ -54,7 +59,7 @@ You should see `(venv)` at the beginning of your command line.
 pip install -r requirements.txt
 ```
 
-
+---
 
 ### 5. Run the Code
 
@@ -64,6 +69,7 @@ python Reel-Shorts_Controller.py
 
 Press `q` to quit the webcam window anytime.
 
+---
 
 ## 👆 How It Works
 
@@ -77,6 +83,7 @@ Press `q` to quit the webcam window anytime.
 
 So you can scroll Shorts with just simple gestures—no mouse or keyboard needed!
 
+---
 
 ## 💡 Troubleshooting
 
@@ -87,6 +94,14 @@ So you can scroll Shorts with just simple gestures—no mouse or keyboard needed
   ```
 - For pyautogui to control keys, allow screen access on some systems.
 
+---
+
+### Pros of keeping mouth control for upward movement:
+-Gives your hands a break, sharing the load with mouth gestures.
+-Can make scrolling more fun and interactive.
+-Adds an extra layer of control, so you’re not stuck with just fingers.
+
+---
 
 ## 📞 Contact
 
