@@ -96,7 +96,7 @@ So you can scroll Shorts with just simple gestures—no mouse or keyboard needed
 
 ---
 
-### Pros of keeping mouth control for upward movement:
+### 💡 Pros of keeping mouth control for upward movement:
 - Gives your hands a break, sharing the load with mouth gestures.
 - Can make scrolling more fun and interactive.
 - Adds an extra layer of control, so you’re not stuck with just fingers.
