@@ -105,4 +105,4 @@ So you can scroll Shorts with just simple gestures—no mouse or keyboard needed
 
 ## 📞 Contact
 
-Made with ❤️ by a beginner for beginners. Feel free to contribute!
+Made with ❤️ by a beginner for beginners by AD. Feel free to contribute!
