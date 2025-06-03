@@ -28,14 +28,6 @@ class FaceControlShorts:
         self.prev_y_index = None
         self.prev_y_thumb = None
 
-        # For pinch-to-zoom (kept as placeholder, but not actively used for control)
-        self.initial_pinch_distance = None
-        self.zoom_sensitivity = 0.05 # Adjust as needed
-
-    # --- Helper function for distance calculation ---
-    def euclidean_distance(self, p1, p2):
-        return ((p2.x - p1.x)**2 + (p2.y - p1.y)**2)**0.5
-
     # --- Mouth Detection ---
     def detect_mouth_open(self, landmarks):
         # Upper and lower lip points (landmarks 13 and 14)
@@ -80,40 +72,6 @@ class FaceControlShorts:
         
         self.prev_y_thumb = thumb_tip.y
         return thumb_downward_movement
-
-    # --- Pinch-to-Zoom Detection (Conceptual - not used for control in this version) ---
-    def detect_pinch_zoom(self, hand_landmarks):
-        if not hand_landmarks:
-            self.initial_pinch_distance = None
-            return None # No pinch detected
-
-        thumb_tip = hand_landmarks.landmark[4]
-        index_tip = hand_landmarks.landmark[8]
-
-        current_distance = self.euclidean_distance(thumb_tip, index_tip)
-
-        if self.initial_pinch_distance is None:
-            # If fingers are relatively close, consider it the start of a pinch gesture
-            if current_distance < 0.1: # Arbitrary small distance to start tracking
-                self.initial_pinch_distance = current_distance
-                return "start"
-        else:
-            # Check for zoom in (distance increases) or zoom out (distance decreases)
-            if current_distance - self.initial_pinch_distance > self.zoom_sensitivity:
-                self.initial_pinch_distance = current_distance # Update initial distance to prevent continuous trigger
-                return "zoom_in"
-            elif self.initial_pinch_distance - current_distance > self.zoom_sensitivity:
-                self.initial_pinch_distance = current_distance # Update initial distance
-                return "zoom_out"
-            # If the distance change is not significant enough, maintain the initial distance
-            # This prevents resetting the gesture if there's minor finger movement
-            elif abs(current_distance - self.initial_pinch_distance) < self.zoom_sensitivity / 2:
-                return "maintaining"
-            else:
-                # If the distance changes significantly but not enough for a zoom, reset
-                self.initial_pinch_distance = None
-                return None
-        return None
 
     def start(self):
         while True:
